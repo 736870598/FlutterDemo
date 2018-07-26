@@ -48,13 +48,14 @@ class ShoppingListItem extends StatelessWidget{
 class ShoppingList extends StatefulWidget {
 
   List<Product> products;
-  ShoppingList({Key key, this.products}) : super(key: key);
+  ShoppingList({Key key, this.products}) : super(key: key){
+    if(products == null || products.isEmpty){
+      products = _kProducts;
+    }
+  }
 
   @override
   _ShoppingListState createState() {
-    if(products == null){
-      products = _kProducts;
-    }
     return new _ShoppingListState();
   }
 }
@@ -95,7 +96,7 @@ class _ShoppingListState extends State<ShoppingList> {
   }
 }
 
-final List<Product> _kProducts = <Product>[
+ final List<Product> _kProducts = <Product>[
   new Product(name: "鸡蛋"),
   new Product(name: "面包"),
   new Product(name: "牛奶"),

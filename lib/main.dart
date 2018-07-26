@@ -18,6 +18,7 @@ import 'Flutter_15.dart';
 import 'Flutter_16.dart';
 import 'Flutter_17.dart';
 import 'Flutter_18.dart';
+import 'Flutter_19.dart';
 
 class PageInfo{
   final String name;
@@ -97,6 +98,7 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "16_绘画效果之装饰容器", widget:  new DecorationDrawDemo()),
   new PageInfo(name: "17_绘画效果之不透明度", widget:  new OpacityDrawDemo()),
   new PageInfo(name: "18_显示菜单的点击事件", widget:  new MenusDemo()),
+  new PageInfo(name: "19_质感设计之底部导航", widget:  new NavigationMenusDemo()),
 
 ];
 
