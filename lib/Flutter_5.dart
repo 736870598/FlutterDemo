@@ -14,9 +14,8 @@ class ShoppingListItem extends StatelessWidget{
   final bool inCart;
   final CartChangedCallback onCartChanged;
 
-  ShoppingListItem({Product product, this.inCart, this.onCartChanged})
-      : product = product,
-        super(key: new ObjectKey(product));
+  ShoppingListItem({this.product, this.inCart, this.onCartChanged})
+      : super(key: new ObjectKey(product));
 
   Color _getColor(BuildContext context){
     return inCart ? Colors.black54 : Theme.of(context).primaryColor;
@@ -48,11 +47,14 @@ class ShoppingListItem extends StatelessWidget{
 
 class ShoppingList extends StatefulWidget {
 
-  final List<Product> products;
+  List<Product> products;
   ShoppingList({Key key, this.products}) : super(key: key);
 
   @override
   _ShoppingListState createState() {
+    if(products == null){
+      products = _kProducts;
+    }
     return new _ShoppingListState();
   }
 }
@@ -76,7 +78,7 @@ class _ShoppingListState extends State<ShoppingList> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("购物清单"),
+        title: new Text("应用实例_购物清单"),
       ),
       body: new ListView(
           children: widget.products.map(
@@ -97,6 +99,22 @@ final List<Product> _kProducts = <Product>[
   new Product(name: "鸡蛋"),
   new Product(name: "面包"),
   new Product(name: "牛奶"),
+  new Product(name: "鸡蛋"),
+  new Product(name: "面包"),
+  new Product(name: "牛奶"),
+  new Product(name: "鸡蛋"),
+  new Product(name: "面包"),
+  new Product(name: "牛奶"),
+  new Product(name: "鸡蛋"),
+  new Product(name: "面包"),
+  new Product(name: "牛奶"),
+  new Product(name: "鸡蛋"),
+  new Product(name: "面包"),
+  new Product(name: "牛奶"),
+  new Product(name: "鸡蛋"),
+  new Product(name: "面包"),
+  new Product(name: "牛奶"),
+
 ];
 
 void main(){

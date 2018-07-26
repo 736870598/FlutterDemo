@@ -18,7 +18,7 @@ class TutorialHome extends StatelessWidget {
             icon: new Icon(Icons.menu),
             tooltip: "导航菜单",
             onPressed: null),
-        title: new Text("实例标题"),
+        title: new Text("质感设计"),
         actions: <Widget>[
           new IconButton(
               icon: new Icon(Icons.search),

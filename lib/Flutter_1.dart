@@ -45,7 +45,7 @@ class MyScaffold extends StatelessWidget{
       child: new Column(
         children: <Widget>[
           new MyAppBar(
-            title: new Text('实例标题', style: Theme.of(context).primaryTextTheme.title,),
+            title: new Text('第一个Flutter实例', style: Theme.of(context).primaryTextTheme.title,),
           ),
           new Expanded(
               child: new Center(
