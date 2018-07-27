@@ -159,10 +159,10 @@ class _MenusDemoState extends State<NavigationMenusDemo> with TickerProviderStat
         vsync: this,
       )
     ];
-    for (NavigationIconView view in _navigationViews){
-      // 每次动画控制器的值更改时调用侦听器
-      view.controller.addListener(_rebuild);
-    }
+//    for (NavigationIconView view in _navigationViews){
+//      // 每次动画控制器的值更改时调用侦听器
+//      view.controller.addListener(_rebuild);
+//    }
     _navigationViews[_currentIndex].controller.value = 1.0;
   }
 
@@ -175,11 +175,6 @@ class _MenusDemoState extends State<NavigationMenusDemo> with TickerProviderStat
   }
 
 
-  void _rebuild(){
-    setState((){
-
-    });
-  }
 
   Widget _buildTransitionsStack(){
     final List<FadeTransition> transitions = <FadeTransition>[];

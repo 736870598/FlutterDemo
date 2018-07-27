@@ -48,9 +48,10 @@ class ShoppingListItem extends StatelessWidget{
 class ShoppingList extends StatefulWidget {
 
   List<Product> products;
-  ShoppingList({Key key, this.products}) : super(key: key){
-    if(products == null || products.isEmpty){
-      products = _kProducts;
+  ShoppingList({Key key,  List<Product> products}) :  super(key: key){
+    this.products = products;
+    if(this.products == null || this.products.isEmpty){
+      this.products = _kProducts;
     }
   }
 

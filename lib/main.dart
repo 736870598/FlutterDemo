@@ -19,6 +19,10 @@ import 'Flutter_16.dart';
 import 'Flutter_17.dart';
 import 'Flutter_18.dart';
 import 'Flutter_19.dart';
+import 'Flutter_20.dart';
+import 'Flutter_21.dart';
+import 'Flutter_22.dart';
+import 'Flutter_23.dart';
 
 class PageInfo{
   final String name;
@@ -99,6 +103,10 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "17_绘画效果之不透明度", widget:  new OpacityDrawDemo()),
   new PageInfo(name: "18_显示菜单的点击事件", widget:  new MenusDemo()),
   new PageInfo(name: "19_质感设计之底部导航", widget:  new NavigationMenusDemo()),
+  new PageInfo(name: "20_质感设计之列表项", widget:  new AchievementView()),
+  new PageInfo(name: "21_网络请求", widget:  new HttpRequestDemo()),
+  new PageInfo(name: "22_读写文件操作", widget:  new ReadAndWriteDemo()),
+  new PageInfo(name: "23_进度条", widget:  new ActionViewEcology(currentEmergy: 10, currentHunger: 20, currentMood: 30)),
 
 ];
 
