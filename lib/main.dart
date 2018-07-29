@@ -23,6 +23,7 @@ import 'Flutter_20.dart';
 import 'Flutter_21.dart';
 import 'Flutter_22.dart';
 import 'Flutter_23.dart';
+import 'Flutter_24.dart';
 
 class PageInfo{
   final String name;
@@ -107,6 +108,7 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "21_网络请求", widget:  new HttpRequestDemo()),
   new PageInfo(name: "22_读写文件操作", widget:  new ReadAndWriteDemo()),
   new PageInfo(name: "23_进度条", widget:  new ActionViewEcology(currentEmergy: 10, currentHunger: 20, currentMood: 30)),
+  new PageInfo(name: "24_可滚动的标签页", widget:  new ScrollableTabsDemo()),
 
 ];
 
