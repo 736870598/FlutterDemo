@@ -37,5 +37,6 @@ flutter中文社区： https://flutterchina.club/
       new PageInfo(name: "22_读写文件操作", widget:  new ReadAndWriteDemo()),
       new PageInfo(name: "23_进度条", widget:  new ActionViewEcology(currentEmergy: 10, currentHunger: 20, currentMood: 30)),
       new PageInfo(name: "24_可滚动的标签页", widget:  new ScrollableTabsDemo()),
-
+      new PageInfo(name: "25_质感设计之卡片", widget:  new MyHomePage()),
+      new PageInfo(name: "26_质感设计之持久底部面板", widget:  new MyDialogDemo()),
     ];
