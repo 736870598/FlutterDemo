@@ -3,7 +3,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+//import 'package:http/http.dart' as http;
 
 final String url = "https://domokit.github.io/examples/stocks/data/stock_data_2.json";
 
@@ -20,20 +20,20 @@ class _HttpRequestDemo extends State<HttpRequestDemo> {
   String result = "";
 
   Future<Null> _networkLoading(String url) async{
-    http.get(url).then((http.Response response) {
-      //赋值
-        String netData = response.body;
-        JsonDecoder decoder = new JsonDecoder();
-        List<List<String>> json = decoder.convert(netData);
-
-        print(json);
-
-        setState((){
-          headerMap = response.headers;
-          result = json.toString();
-        });
-
-    });
+//    http.get(url).then((http.Response response) {
+//      //赋值
+//        String netData = response.body;
+//        JsonDecoder decoder = new JsonDecoder();
+//        List<List<String>> json = decoder.convert(netData);
+//
+//        print(json);
+//
+//        setState((){
+//          headerMap = response.headers;
+//          result = json.toString();
+//        });
+//
+//    });
   }
 
 

@@ -3,7 +3,7 @@
 import 'dart:io';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
+//import 'package:path_provider/path_provider.dart';
 
 class ReadAndWriteDemo extends StatefulWidget {
 
@@ -40,7 +40,8 @@ class _ReadAndWriteDemoState extends State<ReadAndWriteDemo>{
 
 //  打开文件...
   Future<File> _getLocalFile() async{
-    String dir = (await getApplicationDocumentsDirectory()).path;
+//    String dir = (await getApplicationDocumentsDirectory()).path;
+    String dir = "";
     return new File("$dir/counter.txt");
   }
 
