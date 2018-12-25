@@ -39,4 +39,7 @@ flutter中文社区： https://flutterchina.club/
       new PageInfo(name: "24_可滚动的标签页", widget:  new ScrollableTabsDemo()),
       new PageInfo(name: "25_质感设计之卡片", widget:  new MyHomePage()),
       new PageInfo(name: "26_质感设计之持久底部面板", widget:  new MyDialogDemo()),
+      new PageInfo(name: "27_质感设计之模态底部面板", widget:  new ShowModalBottomDemo()),
+      new PageInfo(name: "28_质感设计之表单输入", widget:  new FormDemo()),
+      new PageInfo(name: "30_自定义字体", widget:  new MyFontsDemo()),
     ];

@@ -26,6 +26,9 @@ import 'Flutter_23.dart';
 import 'Flutter_24.dart';
 import 'Flutter_25.dart';
 import 'Flutter_26.dart';
+import 'Flutter_27.dart';
+import 'Flutter_28.dart';
+import 'Flutter_30.dart';
 
 class PageInfo{
   final String name;
@@ -113,6 +116,9 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "24_可滚动的标签页", widget:  new ScrollableTabsDemo()),
   new PageInfo(name: "25_质感设计之卡片", widget:  new MyHomePage()),
   new PageInfo(name: "26_质感设计之持久底部面板", widget:  new MyDialogDemo()),
+  new PageInfo(name: "27_质感设计之模态底部面板", widget:  new ShowModalBottomDemo()),
+  new PageInfo(name: "28_质感设计之表单输入", widget:  new FormDemo()),
+  new PageInfo(name: "30_自定义字体", widget:  new MyFontsDemo()),
 
 ];
 
