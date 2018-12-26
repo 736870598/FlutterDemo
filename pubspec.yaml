@@ -17,6 +17,10 @@ flutter:
 
   assets:
     - images/flutter_img.jpg
+    - images/img_1.jpg
+    - images/img_2.jpg
+    - images/img_3.jpg
+    - images/img_4.jpg
 
   fonts:
     - family: global

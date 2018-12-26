@@ -4,9 +4,9 @@ A new Flutter application.
 
 ## Getting Started
 
-dart：http://www.cndartlang.com/
-
-flutter中文社区： https://flutterchina.club/
+[dart官网](http://www.cndartlang.com/)
+[flutter中文社区](https://flutterchina.club/)
+[flutter插件官网](https://pub.dartlang.org/flutter/packages)
 
 ## demo：
 

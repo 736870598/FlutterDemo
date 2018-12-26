@@ -29,6 +29,9 @@ import 'Flutter_26.dart';
 import 'Flutter_27.dart';
 import 'Flutter_28.dart';
 import 'Flutter_30.dart';
+import 'Flutter_31.dart';
+import 'Flutter_32.dart';
+import 'Flutter_33.dart';
 
 class PageInfo{
   final String name;
@@ -119,6 +122,9 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "27_质感设计之模态底部面板", widget:  new ShowModalBottomDemo()),
   new PageInfo(name: "28_质感设计之表单输入", widget:  new FormDemo()),
   new PageInfo(name: "30_自定义字体", widget:  new MyFontsDemo()),
+  new PageInfo(name: "31_构建布局实例", widget:  new MyLayout()),
+  new PageInfo(name: "32_垂直和水平布局", widget:  new RowAndColumnLayout()),
+  new PageInfo(name: "33_GridView（网格视图）", widget:  new MyGridView()),
 
 ];
 
