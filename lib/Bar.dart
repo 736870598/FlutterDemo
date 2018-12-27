@@ -2,6 +2,8 @@ import 'dart:ui' show lerpDouble;
 
 import 'package:flutter/material.dart';
 
+
+//---------------------------36中使用-----------------
 class Bar{
   final double height;
 

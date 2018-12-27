@@ -35,6 +35,7 @@ import 'Flutter_33.dart';
 import 'Flutter_34.dart';
 import 'Flutter_35.dart';
 import 'Flutter_36.dart';
+import 'Flutter_37.dart';
 
 class PageInfo{
   final String name;
@@ -131,6 +132,7 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "34_RefreshPullView", widget:  new RefreshPullView()),
   new PageInfo(name: "35_flutter动画", widget:  new MyAnim()),
   new PageInfo(name: "36_flutter Tween 动画", widget:  new TweenAnim()),
+  new PageInfo(name: "37_flutter Tween 动画", widget:  new TweenAnims()),
 
 ];
 

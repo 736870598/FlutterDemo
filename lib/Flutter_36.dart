@@ -57,7 +57,7 @@ class _TweenAnimPageState extends State<TweenAnimPage> with TickerProviderStateM
     return new Scaffold(
       body: new Center(
         child: new CustomPaint(
-          size: new Size(200, 200),
+          size: new Size(100, 100),
           painter: new BarChartPainter(tween.animate(animation), 30),
         ),
       ),
