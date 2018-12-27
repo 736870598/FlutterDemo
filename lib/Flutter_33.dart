@@ -8,36 +8,26 @@ class MyGridView extends StatelessWidget{
   Widget build(BuildContext context) {
 
     List<Image> _buildGridTileList(int count){
-      return new List<Image>.generate(
-          count,
-              (index){new Image.asset("images/img_1.jpg");}
-      );
+
+      List<Image> imageList = new List();
+      for(int i = 0; i < count; i++){
+        imageList.add(new Image.asset('images/img_${(i % 4) + 1}.jpg'));
+      }
+      return imageList;
     }
 
     Widget buildGrid(){
-      return new GridView.count(
-        shrinkWrap: true,
-        padding: const EdgeInsets.all(4.0),
-        mainAxisSpacing: 4.0,
-        crossAxisSpacing: 4.0,
-        crossAxisCount: 2,
-        children: _buildGridTileList(20),
-//        children: <Widget>[
-//          new Image.asset('images/img_1.jpg'),
-//          new Image.asset('images/img_2.jpg'),
-//          new Image.asset('images/img_3.jpg'),
-//          new Image.asset('images/img_4.jpg'),
-//          new Image.asset('images/img_1.jpg'),
-//          new Image.asset('images/img_2.jpg'),
-//          new Image.asset('images/img_3.jpg'),
-//          new Image.asset('images/img_4.jpg'),
-//          new Image.asset('images/img_1.jpg'),
-//          new Image.asset('images/img_2.jpg'),
-//          new Image.asset('images/img_3.jpg'),
-//          new Image.asset('images/img_4.jpg'),
-//        ],
-      );
+
+      return  new GridView.count(
+            shrinkWrap: true,
+            padding: const EdgeInsets.all(4.0),
+            mainAxisSpacing: 4.0,
+            crossAxisSpacing: 4.0,
+            crossAxisCount: 3,
+            children: _buildGridTileList(20),
+          );
     }
+
 
     return new Scaffold(
       appBar: new AppBar(
@@ -47,8 +37,6 @@ class MyGridView extends StatelessWidget{
         child: buildGrid() ,
       ),
     );
-
-//    return buildGrid();
   }
 
 }

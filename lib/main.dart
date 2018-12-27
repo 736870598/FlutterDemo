@@ -32,6 +32,9 @@ import 'Flutter_30.dart';
 import 'Flutter_31.dart';
 import 'Flutter_32.dart';
 import 'Flutter_33.dart';
+import 'Flutter_34.dart';
+import 'Flutter_35.dart';
+import 'Flutter_36.dart';
 
 class PageInfo{
   final String name;
@@ -125,6 +128,9 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "31_构建布局实例", widget:  new MyLayout()),
   new PageInfo(name: "32_垂直和水平布局", widget:  new RowAndColumnLayout()),
   new PageInfo(name: "33_GridView（网格视图）", widget:  new MyGridView()),
+  new PageInfo(name: "34_RefreshPullView", widget:  new RefreshPullView()),
+  new PageInfo(name: "35_flutter动画", widget:  new MyAnim()),
+  new PageInfo(name: "36_flutter Tween 动画", widget:  new TweenAnim()),
 
 ];
 
