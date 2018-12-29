@@ -4,7 +4,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'BarChart.dart';
+import 'Bar.dart';
 
 class TweenAnims extends StatelessWidget{
   @override
@@ -52,7 +52,6 @@ class _TweenAnimsPageState extends State<TweenAnimsPage> with TickerProviderStat
   
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       body: new Center(
         child: new CustomPaint(

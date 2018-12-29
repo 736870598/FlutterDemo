@@ -20,18 +20,27 @@ class _HttpRequestDemo extends State<HttpRequestDemo> {
   String result = "";
 
   Future<Null> _networkLoading(String url) async{
-    http.get(url).then((http.Response response) {
-      //赋值
-      String netData = response.body;
-      JsonDecoder decoder = new JsonDecoder();
-      List<dynamic> json = decoder.convert(netData);
+    http.Response response = await http.get(url);
+    JsonDecoder decoder = new JsonDecoder();
+    List<dynamic> json = decoder.convert(response.body);
 
-      setState((){
-        headerMap = response.headers;
-        result = json.toString();
-      });
-
+    setState((){
+      headerMap = response.headers;
+      result = json.toString();
     });
+
+//    http.get(url).then((http.Response response) {
+//      //赋值
+//      String netData = response.body;
+//      JsonDecoder decoder = new JsonDecoder();
+//      List<dynamic> json = decoder.convert(netData);
+//
+//      setState((){
+//        headerMap = response.headers;
+//        result = json.toString();
+//      });
+
+//    });
   }
 
 

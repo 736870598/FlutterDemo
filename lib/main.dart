@@ -36,6 +36,8 @@ import 'Flutter_34.dart';
 import 'Flutter_35.dart';
 import 'Flutter_36.dart';
 import 'Flutter_37.dart';
+import 'Flutter_38.dart';
+import 'Flutter_39.dart';
 
 class PageInfo{
   final String name;
@@ -71,7 +73,7 @@ class _PageInfoListState extends State<PageInfoList> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("我的flutter练习"),
+        title: new Text("FlutterTest"),
       ),
       body: new ListView(
         children: _kPageInfoList.map(
@@ -132,7 +134,9 @@ final List<PageInfo> _kPageInfoList = <PageInfo>[
   new PageInfo(name: "34_RefreshPullView", widget:  new RefreshPullView()),
   new PageInfo(name: "35_flutter动画", widget:  new MyAnim()),
   new PageInfo(name: "36_flutter Tween 动画", widget:  new TweenAnim()),
-  new PageInfo(name: "37_flutter Tween 动画", widget:  new TweenAnims()),
+  new PageInfo(name: "37_flutter Tween 动画2", widget:  new TweenAnims()),
+  new PageInfo(name: "38_自定义风格", widget:  new MyStyle()),
+  new PageInfo(name: "39_与平台交互", widget:  new PlatformTalk()),
 
 ];
 

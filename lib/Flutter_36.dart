@@ -3,7 +3,7 @@
 
 import 'dart:math';
 
-import 'package:FlutterTest/Bar.dart';
+import 'Bar.dart';
 import 'package:flutter/material.dart';
 
 class TweenAnim extends StatelessWidget{
@@ -58,7 +58,7 @@ class _TweenAnimPageState extends State<TweenAnimPage> with TickerProviderStateM
       body: new Center(
         child: new CustomPaint(
           size: new Size(100, 100),
-          painter: new BarChartPainter(tween.animate(animation), 30),
+          painter: new BarPainter(tween.animate(animation), 50),
         ),
       ),
       floatingActionButton: new FloatingActionButton(
