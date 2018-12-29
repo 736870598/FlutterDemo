@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import io.flutter.app.FlutterActivity;
@@ -26,16 +28,21 @@ public class MainActivity extends FlutterActivity {
             public void onMethodCall(MethodCall methodCall, MethodChannel.Result result) {
                 Log.v("sunxy", "methodCall: " + methodCall);
                 if(methodCall.method.equals("dataInteraction")) {
-                    int data = getData();
-                    result.success(data);
+                    result.success(getData());
                 }else if(methodCall.method.equals("startNewView")){
                     startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                }else if(methodCall.method.equals("getModel")){
+                    Log.v("sunxy", "arguments: " + methodCall.arguments);
+                    List<DataModel> list = new ArrayList<>();
+                    DataModel model = new DataModel();
+                    model.setValue("1");
+                    list.add(model);
+                    result.success(list);
                 }else{
                     result.notImplemented();
                 }
             }
         });
-
         GeneratedPluginRegistrant.registerWith(this);
     }
 
